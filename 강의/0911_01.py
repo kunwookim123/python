@@ -80,25 +80,25 @@
 #     print('if 실행')
 
 # if-elif-else 문
-name = '철수'
-if name == '철수':
-    print(f'김철수 입니다.')
-elif name == '철수':
-    print(f'철수 입니다.')
-else:
-    print('이름을 입력해주세요.')
+# name = '철수'
+# if name == '철수':
+#     print(f'김철수 입니다.')
+# elif name == '철수':
+#     print(f'철수 입니다.')
+# else:
+#     print('이름을 입력해주세요.')
 
-age = 20
-grade = 2
+# age = 20
+# grade = 2
 
-if name:
-    print(f'이름: {name}')
+# if name:
+#     print(f'이름: {name}')
 
-if age > 20:
-    print('성인입니다.')
+# if age > 20:
+#     print('성인입니다.')
 
-if grade > 3:
-    print('고학년 입니다.')
-elif grade == 2:
-    print('2학년 입니다.')
+# if grade > 3:
+#     print('고학년 입니다.')
+# elif grade == 2:
+#     print('2학년 입니다.')
 
