@@ -30,10 +30,10 @@
 
 # 실습2
 # 문제1
-submissions = ['kim', 'lee', 'kim', 'park', 'choi', 'lee', 'lee']
-set_submissinos = {'kim', 'lee', 'kim', 'park', 'choi', 'lee', 'lee'}
-print('제출한 학생 수: ',len(set_submissinos))
-print('제출자 명단:',set_submissinos)
+# submissions = ['kim', 'lee', 'kim', 'park', 'choi', 'lee', 'lee']
+# set_submissinos = {'kim', 'lee', 'kim', 'park', 'choi', 'lee', 'lee'}
+# print('제출한 학생 수: ',len(set_submissinos))
+# print('제출자 명단:',set_submissinos)
 
 
 # 문제2
