@@ -26,7 +26,7 @@
 # def square(a,b):
 #     if b == 0:
 #         return 1
-    
+
 #     return a * square(a,b-1)
 
 # print(square(2,5))
@@ -38,19 +38,19 @@ def sum_to_n(n):
         return 1
     return n + sum_to_n(n-1)
 
+
 print(sum_to_n(5))
 
 # sum(range(1,n+1))
 
 # 문제2. 문자열 뒤집기 (재귀함수를 이용해서)
+
+
 def reverse_string(s):
     if len(s) == 1:
         return ''
     return s(-1) + reverse_string(s[:-1])
 
+
 print('hello')
 # [::-1]
-
-# 실습7
-# 문제1. 특정 조건 만족하는 튜플만 추출
-students = [('Alice', [80,90]), ('Bob', [60,65]), ('Charlie', [70,70])]
