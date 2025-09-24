@@ -92,9 +92,9 @@
 # print()
 
 # 바이너리
-with open('airplane.jpg', 'rb') as f1:
-    img = f1.read()
+# with open('airplane.jpg', 'rb') as f1:
+#     img = f1.read()
 
-with open('./airplane_copy.jpg', 'wb') as f2:
-    f2.write(img)
+# with open('./airplane_copy.jpg', 'wb') as f2:
+#     f2.write(img)
 
