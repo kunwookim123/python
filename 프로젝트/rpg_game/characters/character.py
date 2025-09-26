@@ -1,4 +1,4 @@
-from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod # 추상 메서드 
 
 class Character:
     def __init__(self, name, level = 1, health = 100, attack_power = 10):
@@ -8,17 +8,18 @@ class Character:
         self.max_health = health
         self.attack_power = attack_power
 
-    @abstractmethod
+    @abstractmethod # 자식 클래스에서 설정 예정
     def attack(self, target):
         pass
 
-    @abstractmethod
+    @abstractmethod # 자식 클래스에서 설정 예정
     def special_attack(self,target):
         pass
 
     def take_damage(self, damage):
         self.health -= damage
         print(f'{self.name}이(가) {damage}만큼 피해를 입었습니다. 남은 체력: {self.health}')
+        
 
     def is_alive(self):
         return self.health > 0
