@@ -1,5 +1,5 @@
-from utils.helpers import choose_character         # __init__을 통한 패키지로 묶인 함수 사용
-from battle.battle_manager import BattleManager
+from utils.helpers import choose_character         # helpers 파일에서 choose_character 클래스 import
+from battle.battle_manager import BattleManager    # battle_manager 파일에서 BattleManager 클래스 import
 
 def main():
     print("=== RPG 전투 게임 ===")
