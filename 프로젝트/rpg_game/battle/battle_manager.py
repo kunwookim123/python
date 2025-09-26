@@ -36,7 +36,7 @@ class BattleManager:
                 print(f"{defender.name}이(가) 쓰러졌습니다!")
                 break # 반복문 탈출
 
-            turn = defender
+            turn = defender # while문을 defender 선공일 때도 적용
 
         winner = self.player if self.player.is_alive() else self.enemy
         print(f"\n{winner.name}의 승리!\n")
