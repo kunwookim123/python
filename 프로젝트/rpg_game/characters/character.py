@@ -17,7 +17,7 @@ class Character: # 캐릭터 기본 설정
         pass
 
     def take_damage(self, damage): # 받은 데미지
-        self.health = max(0, self.health - damage)
+        self.health = max(0, self.health - damage) # 남은 체력이 0 이하로 떨어지지 않게 설정
         print(f'{self.name}이(가) {damage}만큼 피해를 입었습니다. 남은 체력: {self.health}')
         
 
