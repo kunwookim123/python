@@ -147,7 +147,7 @@ print('필요한 값을 더한 배열 결과\n', max_arr)
 # 두 번째 행은 100을 곱해야 합니다.
 arr = np.array([[1, 2, 3], [4, 5, 6]])
 multiply = [10],[100]
-print('새로운 배열:',arr * multiply)
+print('새로운 배열\n',arr * multiply)
 
 
 # 문제6. 아래 배열에서 각 행마다 다른 스칼라 값을 더하기 위해

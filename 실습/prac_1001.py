@@ -55,12 +55,12 @@ import numpy as np
 arr= np.array([[10, 20], [30, 40], [50, 60]])
 raveled =arr.ravel()
 flattened =arr.flatten()
-print('raveled 결과:', raveled)
-print('flattened결과:', flattened)
+print('ravel 결과:', raveled)
+print('flatten 결과:', flattened)
 
 arr[0,0] = 999
-print('원본 변경 후 raveled:', raveled)
-print('원본 변경 후 flattened:', flattened)
+print('원본 변경 후 ravel:', raveled)
+print('원본 변경 후 flatten:', flattened)
 print()
 
 # 2. 크기가 32x32인 이미지 데이터를 가정하고, 이 배열에 대해 expand_dims를 사용하여 shape (1, 32, 32)로 바꾸는 코드를 작성하세요.
