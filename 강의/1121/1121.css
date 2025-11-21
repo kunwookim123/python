@@ -1,0 +1,214 @@
+/* flexbox */
+/* 1차원 레이앙수 시스템 */
+
+/* 기존 방식 : 복잡함 */
+/* float: right; */
+
+/* 이걸 대신해 나온게 flexbox */
+/* 간단한 문법 */
+/* 수직 정렬 쉬움 */
+/* 유연한 크기 조정 */
+/* 반응형 레이아웃 쉬움 */
+
+/* flex-direction -> 주축 방향 */
+/* 주축 = flex-direction */
+
+.container {
+
+    height: 700px;
+    background-color: rgb(230, 230, 230);
+
+    /* flexbox 활성화 */
+    display: flex;
+
+    /* 가장 기본값: 가로 */
+    /* flex-direction: row; */
+    /* 가로 정렬, 역순 */
+    /* flex-direction: row-reverse;  */
+    /* 세로 정렬 */
+    /* flex-direction: column; */
+    /* 세로 정렬, 역순 */
+    /* flex-direction: column-reverse; */
+
+    /* justify-content (주축 정렬) */
+    /* 가로 방향 정렬 */
+    /* flex-direction: row 기준 */
+
+    /* 왼쪽이 기본값 */
+    justify-content: flex-start;
+    /* 오른쪽 정렬 */
+    justify-content: flex-end;
+    /* 가운데 정렬 */
+    justify-content: center;
+    /* 양 끝 정렬 */
+    justify-content: space-between;
+    /* 균등 분배 (양끝 여백 포함) */
+    justify-content: space-around;
+    /* 완전 균등 분배 */
+    justify-content: space-evenly;
+    /* 완전 균등 분배 */
+    justify-content: space-evenly;
+
+    /* 세로 방향 정렬 */
+    align-items: stretch;
+    /* 위쪽 정렬 */
+    align-items: flex-start;
+    /* 아래쪽 정렬 */
+    align-items: flex-end;
+    /* 가운데 정렬 */
+    align-items: center;
+
+    /* 베이스라인 정렬 */
+    align-items: baseline;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    padding: 20px;
+    margin: 10px;
+    font-size: 36px;
+}
+
+/* 모든 요소에 적용 = * */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    padding: 15px 30px;
+}
+
+.logo {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    /* 글자 앞에 점 없애기 */
+    list-style: none;
+    /* 글자 사이 간격 */
+    gap: 30px;
+
+}
+
+.menu a {
+    color: white;
+    font-size: 24px;
+    /* 밑줄 없애기 */
+    text-decoration: none;
+}
+
+/* flex-wrap (줄바꿈)*/
+
+.container1 {
+    height: 500px;
+    display: flex;
+    /* 기본값 한줄 표시 */
+    flex-wrap: nowrap;
+    /* 여러줄 허용 */
+    flex-wrap: wrap;
+    /* 역순 줄바꿈 */
+    flex-wrap: wrap-reverse;
+
+    align-items: center;
+
+    /* gap(요소와 요소사이 간격) */
+    gap: 20px;
+    /* 세로 가로 순 */
+    gap: 20px 10px;
+    /* 세로만 */
+    row-gap: 10px;
+    /* 가로만 */
+    column-gap: 20px;
+}
+
+
+.item0 {
+    width: 200px;
+    height: 200px;
+    /* flex-basis (기본 크기) */
+    /* 이 아이템의 기본 크기를 지정 */
+    /* flex-basis: 200px; */
+    /* flex-basis: 30%; */
+    /* 콘텐츠 크기가 기본값 */
+    /* flex-basis: auto; */
+    font-size: 36px;
+    
+    background-color: green;
+}
+
+.item1 {
+    /* flex-grow (확장) */
+    /* 남은 공간을 차지하는 비율 */
+    /* flex-grow: 1; */
+    /* flex-shrink (축소) */
+    /* 1: 기본값 -> 축소됨 */
+    /* flex-shrink: 1; */
+    /* 0: 축소 안됨 */
+    /* flex-shrink: 0; */
+    /* 2: 더 많이 축소됨 */
+    /* flex-shrink: 2; */
+
+    /* align-self (개별 아이템 정렬) */
+    /* 개별 아이템의 교차축 정렬을 변경 */
+    align-self: flex-start;
+
+    /* order (순서 변경) */
+    /* html 순서를 바꾸지 않고 시각적 순서만 변경*/
+    /* 기본값 */
+    order: 0;
+}
+
+.item2 {
+    /* flex-grow: 2; */
+
+    align-self: center;
+    order: -1;
+}
+
+.item3 {
+    /* flex-grow: 1; */
+
+    align-self: flex-end;
+
+    order: 999;
+}
+
+.container2 {
+    height: 500px;
+    display: flex;
+
+    flex-wrap: wrap;
+    /* align-content (여러줄 정렬) */
+    /* flex-wrap: wrap; 일때 여러줄 정렬*/
+
+    /* align-content: flex-start; */
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-between;
+    align-content: space-around;
+
+}
+
+
+.item00 {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+
+}
